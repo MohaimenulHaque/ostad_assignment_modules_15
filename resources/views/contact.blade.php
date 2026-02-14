@@ -18,16 +18,9 @@
                 @if(session('success'))
                     <p style="color: green;">{{ session('success') }}</p>
                 @endif
-                
+
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
 
                         <form id="contactForm" action="{{ url('contact_us') }}" method="POST" data-sb-form-api-token="API_TOKEN">
                             
@@ -64,10 +57,7 @@
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                                 </div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
@@ -77,16 +67,12 @@
                                         href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
+
                             <div class="d-none" id="submitErrorMessage">
                                 <div class="text-center text-danger mb-3">Error sending message!</div>
                             </div>
                             <!-- Submit Button-->
                             <div class="d-grid">
-                                {{-- <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button> --}}
                                 <input type="submit" class="btn btn-primary btn-lg">
                             </div>
                         </form>
